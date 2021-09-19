@@ -14,9 +14,7 @@ const Container = styled.div`
 const App = () => {
   const [data, setData] = useState(dataSet)
   const [localData, setLocalData] = useState(false)
- 
  useEffect(() => {
-    
    var retrievedObject = localStorage.getItem('data');
    setData(JSON.parse(retrievedObject))
  }, [localData])
